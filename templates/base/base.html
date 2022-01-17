@@ -15,18 +15,21 @@
         {% include 'base/navbar.html' %}
         <!-- End Navbar-->
 
-        <!--Main Sections-->
-        {% block content %}
-        {% endblock %}
-        <!-- End Main Sections-->
+        <div id="main">
 
-        <!-- Start: Footer Section -->
-        {% include 'base/footer.html' %}
-        <!-- End: Footer Section -->
+            <!--Main Sections-->
+            {% block content %}
+            {% endblock %}
+            <!-- End Main Sections-->
+        </div>
 
-        <!-- JS Section-->
-        {% include 'base/js.html' %}
-        <!--End JS Section-->
+            <!-- Start: Footer Section -->
+            {% include 'base/footer.html' %}
+            <!-- End: Footer Section -->
+
+            <!-- JS Section-->
+            {% include 'base/js.html' %}
+            <!--End JS Section-->
     </div>
 
 </body>

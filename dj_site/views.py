@@ -10,8 +10,5 @@ def home(request):
     context = {'posts': posts, }
     return render(request, 'home.html', context)
 
-def about(request):
-    return render(request, 'about.html', {})
-
 def contact(request):
     return render(request, 'contact.html', {})

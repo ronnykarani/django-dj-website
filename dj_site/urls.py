@@ -26,9 +26,12 @@ urlpatterns = [
     path('admin/', admin.site.urls),
 
     path('', views.home, name='home'),
-    path('about/', views.about, name='about'),
     path('contact/', views.contact, name='contact'),
 
     path('blog/', include('blog.urls')),
     path('mix/', include('mix.urls')),
 ]
+
+if settings.DEBUG:
+    urlpatterns += staticfiles_urlpatterns()
+    urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
