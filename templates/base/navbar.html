@@ -16,10 +16,10 @@
 <!-- Nav -->
 <nav id="nav">
     <ul class="links">
-        <li class="active"><a href="index.html">Home</a></li>
-        <li><a href="mix.html">Mix</a></li>
-        <li><a href="blog.html">Blog</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li class="active"><a href="{% url 'home' %}">Home</a></li>
+        <li><a href="{% url 'mix' %}">Mix</a></li>
+        <li><a href="{% url 'blog' %}">Blog</a></li>
+        <li><a href="{% url 'contact'%}">Contact</a></li>
     </ul>
     <ul class="icons">
         <li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>

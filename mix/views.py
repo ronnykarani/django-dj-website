@@ -1,5 +1,5 @@
 from django.shortcuts import render
 
 # Create your views here.
-def video_list(request):
-    return render(request, 'blog/post_list.html', {})
+def mix(request):
+    return render(request, 'mix/mix_list.html', {})
